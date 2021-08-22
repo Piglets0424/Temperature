@@ -26,7 +26,7 @@ jobs:
         username: ${{ secrets.MAIL_USERNAME }}  #变量名需与配置的一致
         password: ${{ secrets.MAIL_PASSWORD }}
         subject: 每日体温填报
-        body: file://mydata.html
+        body: file://email.txt
         to: 18236661051@163.COM   #填写要收件邮箱名
         from: GitHub Actions
         content_type: text/html
