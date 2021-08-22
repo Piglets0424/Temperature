@@ -23,11 +23,11 @@ jobs:
         server_address: smtp.163.com
         server_port: 465
           # 这些sectret的环境变量需要配置在setting中的secret下
-        username: ${{ secrets.MAIL_USERNAME }}  #变量名需与配置的一致
-        password: ${{ secrets.MAIL_PASSWORD }}
+        username: ${{ secrets.EMAILNAME }}  #变量名需与配置的一致
+        password: ${{ secrets.EMAILPOP }}
         subject: 每日体温填报
-        body: file://email.txt
-        to: 18236661051@163.COM   #填写要收件邮箱名
+        body: file://mydata.html
+        to: 0000000@qq.com   #填写要收件邮箱名
         from: GitHub Actions
         content_type: text/html
         
