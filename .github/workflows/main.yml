@@ -6,9 +6,9 @@ on:
     - cron: '10 2,3 * * *'  
   #在UTC时间2:10,3:10运行，也就是北京时间10点10分和11点10分
 jobs:
-  build: ubuntu-latest
+  build:
 
-    runs-on: 
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
