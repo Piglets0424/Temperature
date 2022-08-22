@@ -3,7 +3,7 @@ name: tiwentianbao
 on:
   workflow_dispatch: #在actions界面点击即可运行
   schedule:
-    - cron: '10 3,4,5 * * *'  
+    - cron: '* 3,4,5 * * *'  
   #在UTC时间2:10,3:10运行，也就是北京时间10点10分和11点10分
 jobs:
   build:
